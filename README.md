@@ -8,7 +8,7 @@ CodeBodyJS
 
 ## Demo
 
-http://codebodyjs.ongaeshi.me
+http://codebodyjs.ongaeshi.me (Comming Soon!)
 
 ----
 Copyright (C) 2013 ongaeshi <<ongaeshi0621@gmail.com>>
