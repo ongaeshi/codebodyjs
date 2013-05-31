@@ -3,9 +3,20 @@ var Box;
 
 Box = (function() {
   function Box(value, x, y) {
-    this.model = new Label(value);
+    var ball, label, surface;
+
+    this.model = new Group();
     this.model.x = x;
     this.model.y = y;
+    ball = new Sprite(50, 25);
+    surface = new Surface(50, 20);
+    surface.context.fillStyle = '#f0f0f0';
+    surface.context.fillRect(0, 0, 50, 50);
+    ball.image = surface;
+    this.model.addChild(ball);
+    label = new Label(value);
+    label.font = "16px Palatino";
+    this.model.addChild(label);
   }
 
   return Box;
